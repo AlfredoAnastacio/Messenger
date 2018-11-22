@@ -21,5 +21,10 @@ Vue.use(BootstrapVue); //uso de Boostrap-Vue
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+        logout(){
+            document.getElementById('logout-form').submit();
+        }
+    }
 });

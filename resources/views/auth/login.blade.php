@@ -4,7 +4,7 @@
 <b-container>
     <b-row align-h="center">
         <b-col cols="8">
-            <b-card title="Inicio de Sesión">
+            <b-card title="Inicio de Sesión" class="my-3">
                 <b-alert show>
                     Por favor ingresa tus datos:
                 </b-alert>
