@@ -18,7 +18,9 @@ Vue.use(BootstrapVue); //uso de Boostrap-Vue
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('contact-component', require('./components/ContactComponent.vue'));
+Vue.component('contact-list-component', require('./components/ContactListComponent.vue'));
+Vue.component('active-conversation-component', require('./components/ActiveConversationComponent.vue'));
 
 const app = new Vue({
     el: '#app',
