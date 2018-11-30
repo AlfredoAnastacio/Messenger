@@ -15,6 +15,18 @@ class CreateConversationsTable extends Migration
     {
         Schema::create('conversations', function (Blueprint $table) {
             $table->increments('id');
+            
+            $table->unsignedInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            
+            $table->unsignedInteger('contact_id');
+            $table->foreign('contact_id')->references('id')->on('users');
+            
+            $table->text('last_message');
+            $table->dateTime('last_time');
+            $table->boolean('listen_notifications')->default(true);
+            $table->boolean('has_blocked')->default(false);
+            
             $table->timestamps();
         });
     }
