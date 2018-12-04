@@ -14,10 +14,8 @@ class ConversationsTableSeeder extends Seeder
     public function run()
     {
         Conversation::create([
-            'user_id'    => 1,
-            'contact_id' => 2,
-            'last_message' => null,
-            'last_time' => null
+            'user_id'    => 1, 'contact_id' => 2, 'last_message' => null, 'last_time' => null,
+            'user_id'    => 2, 'contact_id' => 1, 'last_message' => null, 'last_time' => null
         ]);
     }
 }
