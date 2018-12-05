@@ -13,9 +13,7 @@ class MessagesTableSeeder extends Seeder
      */
     public function run()
     {
-        Message::create([
-            'from_id' =>  1, 'to_id' => 2, 'content' => 'Hola, ¿Cómo estás?',
-            'from_id' =>  2, 'to_id' => 1, 'content' => 'Bien, ¿ y tú?'
-        ]);
+        Message::create(['from_id' =>  1, 'to_id' => 2, 'content' => 'Hola, ¿Cómo estás?']);
+        Message::create(['from_id' =>  2, 'to_id' => 1, 'content' => 'Bien, ¿ y tú?']);
     }
 }
